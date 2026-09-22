@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #F6F5F2;
+  color: #14171F;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: lowercase;
+  border: 1px solid transparent;
+}
+.status-approved { background: #E9F5EF; color: #1F7A5C; border-color: #BFE3D2; }
+.status-denied { background: #FBECEC; color: #A83232; border-color: #F1C7C7; }
+.status-escalated { background: #FCF3E4; color: #B4791F; border-color: #F2DBB1; }
